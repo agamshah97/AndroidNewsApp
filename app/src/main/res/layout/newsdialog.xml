@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="350dp"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true">
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="Title"
+        android:textSize="20dp"
+        android:textColor="@android:color/black"
+        android:padding="10dp"
+        android:ellipsize="end"
+        android:maxLines="3"
+        android:textStyle="bold"
+        android:layout_below="@+id/dialog_img"
+        android:layout_centerInParent="true"
+        android:textAlignment="textStart"
+        />
+
+        <LinearLayout
+            android:layout_below="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:background="@color/colorPrimary"
+            android:paddingTop="2dp">
+
+            <ImageView
+                android:id="@+id/dialog_twitter"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/bluetwitter"
+                android:background="@android:color/white"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="2dp" />
+
+            <ImageView
+                android:id="@+id/dialog_bookmark"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_bookmark_empty"
+                android:background="@android:color/white"/>
+
+        </LinearLayout>
+
+</RelativeLayout>
